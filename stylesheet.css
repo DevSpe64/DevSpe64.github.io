@@ -1,0 +1,255 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    height: auto;
+background-color: #8F43EE;
+}
+
+
+.top-links {
+    position: sticky;
+    top: 0;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    background: black;
+    box-shadow: 0px 8px rgba(0, 0, 0, 0.11);
+
+}
+
+ul li {
+    padding: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: Courier, monospace	;
+}
+
+.nav-decoration {
+    height: 0.25rem;
+    background: white;
+}
+
+
+header .header{
+    font-family: Impact,  'Arial Narrow Bold', sans-serif ;
+    height: 600px;
+    background-color: #8F43EE;
+    text-shadow: 10px, 10px, white;
+}
+
+.header h1{
+    text-align: center;
+    font-size: 15rem;
+    letter-spacing: 1rem;
+}
+
+.home-page .attributes{
+    background-image: url(https://lh3.googleusercontent.com/5ydA8gKtJj1oVJW1ITUJxTf-5lbfIFkQtyF-Pn8chwMUi2zSvy40xYQytPgu2sN6QqX2N8RJWyO3A1MFEBO8i-wfayF3qiEjTIdQLog9YV9_EJkSod7le4Po7hqXvheF6ybVRozR2A=w2400);
+    background-position: top, center;
+    height: 650px;
+    background-size: 3000px;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-areas: 
+    'text-o text-0 text-0 text-0 text-0 text-0'
+    'text-1 text-1 text-1 text-2 text-2 text-2'
+    'text-1 text-1 text-1 text-2 text-2 text-2'
+    'text-1 text-1 text-1 text-2 text-2 text-2'
+    'text-3 text-3 text-3 text-4 text-4 text-4'
+    'text-3 text-3 text-3 text-4 text-4 text-4'
+    'text-3 text-3 text-3 text-4 text-4 text-4'
+    ;
+    font-style: italic;
+    color: white;
+    font-weight: bold;
+    font-size: 5rem;
+}
+
+.text-0 {
+    padding-top: 2.5rem;
+    border: dotted white;
+    
+}
+
+.text-1 {
+    grid-area: text-1;
+    align-self: center;
+    justify-self: center;
+    padding-right: 200px;
+    text-align: center;
+    
+}
+
+
+.text-2 {
+    grid-area: text-2;
+    align-self: top center;
+    justify-self: flex-end;
+    justify-self: center ;
+    ;
+
+}
+.text-3 {
+    grid-area: text-3;
+    align-self: center;
+    justify-self: center;
+    padding-right: 200px;
+    
+
+}
+.text-4 {
+    grid-area: text-4;
+    align-self: center;
+    justify-self: top;
+    justify-self: center;
+    padding-bottom: 5rem;
+}
+
+.am-block {
+    background-color: white;
+}
+
+.am-header {
+    padding-top: 50px;
+    padding-bottom: none;
+    background-color: black;
+    text-align: center;
+}
+
+.am-header h1 {
+    color: white;
+    text-shadow: 10px, 10px, 10px, #8F43EE;
+
+}
+
+.am-grid .about-me{
+    display: grid;
+    grid-template-areas:
+    'port-image skill-1 skill-1 skill-1'
+    'bio skill-2 skill-2 skill-2'
+    'bio skill-3 skill-3 skill-3'
+    'networking-h networking-h networking-h networking-h'
+    'net-link-1 net-link-1 net-link-2 net-link-2'
+    'contacts contacts contacts contacts'
+    ;
+    padding: 5rem;
+}
+
+.bio {
+    grid-area: bio;
+    width: 400px;
+    padding-top: 1.5rem;
+}
+
+.bio h1 {
+    
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+.bio p {
+    text-align: center;
+}
+
+
+
+.port-image {
+    grid-area: port-image;
+    grid-template-columns: fit-content;
+}
+.port-image img {
+    height: 300px;
+    width: 400px;
+}
+
+.skill-1 {
+    grid-area: skill-1;
+}
+.skill-2 {
+    grid-area: skill-2;
+}
+.skill-2 {
+    grid-area: skill-2;
+}
+.networking-h {
+    grid-area: networking-h;
+    padding-top: 5rem;
+    
+}
+
+
+
+.networking-h h1 {
+    text-align: center;
+}
+
+.net-link-1 {
+    grid-area: net-link-1;
+    text-align: center;
+    border: solid black;
+}
+
+.net-link-2 {
+    grid-area: net-link-2;
+    border: solid black;
+
+}
+
+.contacts {
+    grid-area: contacts;
+}
+
+.proj-header {
+    text-align: center;
+}
+
+.project-body .proj-links {
+    display: grid;
+    grid-template-areas:
+    'proj-1 proj-2'
+    'proj-3 proj-3'
+    'tech-used skills-used'
+    ;
+    border: solid white;
+    background-color: black;
+    padding-top: 5rem;
+}
+
+.proj-1 {
+    grid-area: proj-1;
+    text-align: center;
+}
+
+.proj-2 {
+    grid-area: proj-2;
+    text-align: center;
+}
+
+.proj-3 {
+    grid-area: proj-3;
+    text-align: center;
+    padding-bottom: 5rem;
+}
+
+.skills-used {
+    grid-area: skills-used;
+    color: white;
+}
+
+.tech-used {
+    grid-area: tech-used;
+    color: white;
+}
+
+footer {
+    text-align: center;
+    padding-top: 5rem;
+}
